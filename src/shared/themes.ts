@@ -1,6 +1,6 @@
 type IThemeName = 'dark' | 'light';
 
-interface IApplicationTheme {
+export interface IApplicationTheme {
   NAME: IThemeName;
   PRIMARY: string;
   BASE_TEXT: string;
