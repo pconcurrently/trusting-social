@@ -1,8 +1,13 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { StyledApp } from './App.styled';
+import {
+  StyledApp,
+  StyledAppBackground,
+  StyledDarkThemeOverlay,
+} from './App.styled';
 import { Header } from '../Header';
+import { Search } from '../Search';
 import { lightTheme, darkTheme } from '../../shared/themes';
 
 export const App = () => {
@@ -16,12 +21,16 @@ export const App = () => {
     }
   }, [setTheme, theme]);
 
-
-
   return (
     <ThemeProvider theme={theme}>
       <StyledApp>
+        <StyledAppBackground>
+          {theme.NAME === 'dark' && (
+            <StyledDarkThemeOverlay></StyledDarkThemeOverlay>
+          )}
+        </StyledAppBackground>
         <Header switchTheme={switchTheme} />
+        <Search />
       </StyledApp>
     </ThemeProvider>
   );

@@ -5,20 +5,23 @@ export interface IApplicationTheme {
   PRIMARY: string;
   BASE_TEXT: string;
   BASE_BACKGROUND: string;
+  BORDER: string;
 }
 
 export const darkTheme: IApplicationTheme = {
   NAME: 'dark',
   PRIMARY: 'black',
-  BASE_TEXT: 'white',
-  BASE_BACKGROUND: 'black',
+  BASE_TEXT: '#CDCDCD;',
+  BASE_BACKGROUND: '#0E0E0E',
+  BORDER: '#565656',
 };
 
 export const lightTheme: IApplicationTheme = {
   NAME: 'light',
   PRIMARY: 'red',
-  BASE_TEXT: 'black',
-  BASE_BACKGROUND: 'white',
+  BASE_TEXT: '#484848',
+  BASE_BACKGROUND: '#F8F8F8',
+  BORDER: '#EBEBEB',
 };
 
 const sizes = {

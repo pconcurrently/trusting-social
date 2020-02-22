@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const spin = keyframes`
@@ -65,7 +64,8 @@ export const StyledThemeSwitcher = styled.div`
       left: 4px;
       opacity: 0;
       transition: 0.4s;
-      animation: ${shake} 4s linear infinite;
+      animation: ${shake} 2s linear infinite;
+      fill: #FFF069;
     }
   }
 
@@ -81,7 +81,7 @@ export const StyledThemeSwitcher = styled.div`
   }
 
   input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(32px);
   }
 
   .slider.round {
