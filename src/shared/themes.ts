@@ -6,6 +6,7 @@ export interface IApplicationTheme {
   BASE_TEXT: string;
   BASE_BACKGROUND: string;
   BORDER: string;
+  BASE_BACKGROUND_ALT: string;
 }
 
 export const darkTheme: IApplicationTheme = {
@@ -13,6 +14,7 @@ export const darkTheme: IApplicationTheme = {
   PRIMARY: 'black',
   BASE_TEXT: '#CDCDCD;',
   BASE_BACKGROUND: '#0E0E0E',
+  BASE_BACKGROUND_ALT: '#1B1B1B',
   BORDER: '#565656',
 };
 
@@ -21,6 +23,7 @@ export const lightTheme: IApplicationTheme = {
   PRIMARY: 'red',
   BASE_TEXT: '#484848',
   BASE_BACKGROUND: '#F8F8F8',
+  BASE_BACKGROUND_ALT: 'white',
   BORDER: '#EBEBEB',
 };
 

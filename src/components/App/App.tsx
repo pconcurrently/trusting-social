@@ -21,16 +21,18 @@ export const App = () => {
     }
   }, [setTheme, theme]);
 
+  const isDarkTheme = React.useMemo(() => theme.NAME === 'dark', [theme]);
+
   return (
     <ThemeProvider theme={theme}>
       <StyledApp>
         <StyledAppBackground>
-          {theme.NAME === 'dark' && (
+          {isDarkTheme && (
             <StyledDarkThemeOverlay></StyledDarkThemeOverlay>
           )}
         </StyledAppBackground>
         <Header switchTheme={switchTheme} />
-        <Search />
+        <Search isDarkTheme={isDarkTheme} />
       </StyledApp>
     </ThemeProvider>
   );

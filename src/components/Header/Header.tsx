@@ -3,6 +3,7 @@ import React from 'react';
 
 import { ThemeSwitcher } from '../ThemeSwitcher';
 import { StyledHeader } from './Header.styled';
+import airbnbLogo from '../../images/airbnb-logo.svg';
 
 interface IProps {
   switchTheme: () => void;
@@ -11,7 +12,9 @@ interface IProps {
 export const Header: React.SFC<IProps> = ({ switchTheme }) => {
   return (
     <StyledHeader>
-      <div></div>
+      <div className="logo-wrapper">
+        <img src={airbnbLogo} alt="Logo"/>
+      </div>
       <ul>
         <li>
           <ThemeSwitcher onClick={switchTheme} />

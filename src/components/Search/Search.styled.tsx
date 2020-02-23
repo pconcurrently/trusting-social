@@ -17,27 +17,37 @@ export const StyledSearch = styled.div`
     top: 220px;
   }
 
-  input {
-    width: 100%;
-    height: 60px;
-    padding: 0 24px;
-    background: ${({ theme }: ITheme) => theme.BASE_BACKGROUND};
-    border: ${({ theme }: ITheme) => `1px solid ${theme.BORDER}`};
-    box-sizing: border-box;
-    border-radius: 4px 4px 0px 0px;
-    color: ${({ theme }: ITheme) => theme.BASE_TEXT};
-    font-size: 20px;
-    line-height: 23px;
-    font-weight: bold;
-    position: absolute;
-    z-index: 1;
+  .input-wrapper {
+    input {
+      width: 100%;
+      height: 60px;
+      padding: 0 24px;
+      padding-left: 62px;
+      background: ${({ theme }: ITheme) => theme.BASE_BACKGROUND};
+      border: ${({ theme }: ITheme) => `1px solid ${theme.BORDER}`};
+      box-sizing: border-box;
+      border-radius: 4px 4px 0px 0px;
+      color: ${({ theme }: ITheme) => theme.BASE_TEXT};
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: bold;
+      position: absolute;
+      z-index: 1;
 
-    @media ${devices.tablet} {
-      max-width: 600px;
+      @media ${devices.tablet} {
+        max-width: 600px;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
-    &:focus {
-      outline: none;
+    img {
+      position: absolute;
+      left: 21px;
+      top: 17px;
+      z-index: 1;
     }
   }
 `;
