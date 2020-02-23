@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Header } from '../Header';
 
-describe('App', () => {
+describe('Header', () => {
   const switchTheme = jest.fn();
 
   it('should render Header', () => {

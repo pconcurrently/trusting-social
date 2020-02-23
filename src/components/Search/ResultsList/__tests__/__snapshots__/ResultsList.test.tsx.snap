@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultsList should render ResultsList 1`] = `
+"<styled.div>
+  <ul>
+    <li>
+      An Giang
+    </li>
+    <li>
+      Hà Nội
+    </li>
+  </ul>
+</styled.div>"
+`;

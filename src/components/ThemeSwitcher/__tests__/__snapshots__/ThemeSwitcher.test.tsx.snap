@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render ThemeSwitcher 1`] = `
+exports[`ThemeSwitcher should render ThemeSwitcher 1`] = `
 "<styled.div>
   <label className=\\"theme-switch\\" htmlFor=\\"checkbox\\">
     <input type=\\"checkbox\\" id=\\"checkbox\\" onChange={[Function: mockConstructor]} />

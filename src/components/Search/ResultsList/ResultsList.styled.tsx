@@ -16,6 +16,7 @@ export const StyledResultsList = styled.div`
     flex-direction: column;
     padding: 0 24px;
     background-color: ${({ theme }: ITheme) => theme.BASE_BACKGROUND_ALT};
+    color: ${({ theme }: ITheme) => theme.BASE_TEXT};
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 4px 4px;
 

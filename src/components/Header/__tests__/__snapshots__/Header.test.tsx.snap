@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render Header 1`] = `
+exports[`Header should render Header 1`] = `
 "<styled.header>
-  <div />
+  <div className=\\"logo-wrapper\\">
+    <img src=\\"airbnb-logo.svg\\" alt=\\"Logo\\" />
+  </div>
   <ul>
     <li>
       <ThemeSwitcher onClick={[Function: mockConstructor]} />

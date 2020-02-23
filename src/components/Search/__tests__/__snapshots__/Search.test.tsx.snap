@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render Search 1`] = `
+"<styled.div>
+  <div className=\\"input-wrapper\\">
+    <input type=\\"text\\" placeholder=\\"Try Vietnam\\" autoFocus={true} onChange={[Function: onChange]} />
+    <img src=\\"search-icon-light.svg\\" alt=\\"Search\\" />
+  </div>
+  <ResultsList results={{...}} />
+</styled.div>"
+`;

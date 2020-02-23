@@ -21,7 +21,7 @@ export const App = () => {
     }
   }, [setTheme, theme]);
 
-  const isDarkTheme = React.useMemo(() => theme.NAME === 'dark', [theme]);
+  const isDarkTheme = React.useMemo(() => theme.NAME === 'dark', [theme]); // This could be better done via React Context api
 
   return (
     <ThemeProvider theme={theme}>

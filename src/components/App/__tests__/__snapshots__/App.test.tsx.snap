@@ -5,7 +5,7 @@ exports[`App should render App 1`] = `
   <styled.div>
     <styled.div />
     <Header switchTheme={[Function]} />
-    <Search />
+    <Search isDarkTheme={false} />
   </styled.div>
 </ThemeProvider>"
 `;

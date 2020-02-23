@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { ThemeSwitcher } from '../ThemeSwitcher';
 
-describe('App', () => {
+describe('ThemeSwitcher', () => {
   const onClick = jest.fn();
 
   it('should render ThemeSwitcher', () => {
