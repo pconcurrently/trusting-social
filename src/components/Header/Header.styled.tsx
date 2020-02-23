@@ -25,11 +25,12 @@ export const StyledHeader = styled.header`
       display: table-cell;
       list-style: none;
       vertical-align: middle;
-      border-bottom: solid 2px transparent;
       transition: 0.2s;
 
       &:hover:not(:first-child) {
-        border-bottom: solid 2px #fff;
+        a {
+          border-bottom: solid 2px #fff;
+        }
       }
 
       a {
@@ -37,8 +38,10 @@ export const StyledHeader = styled.header`
         text-decoration: none;
         height: 50px;
         line-height: 50px;
-        padding: 0 8px;
+        padding: 0 9px;
+        margin: 0 9px;
         color: #fff;
+        border-bottom: solid 2px transparent;
       }
     }
   }

@@ -27,7 +27,7 @@ export const StyledThemeSwitcher = styled.div`
   }
 
   .slider {
-    background-color: #ccc;
+    background-color: #555555;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -70,8 +70,7 @@ export const StyledThemeSwitcher = styled.div`
   }
 
   input:checked + .slider {
-    background-color: #ccc;
-
+    background-color: #555555;
     img.light-icon {
       opacity: 0;
     }
