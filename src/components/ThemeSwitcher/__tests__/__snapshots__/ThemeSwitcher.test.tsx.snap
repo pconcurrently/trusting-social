@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render ThemeSwitcher 1`] = `ShallowWrapper {}`;
+exports[`App should render ThemeSwitcher 1`] = `
+"<styled.div>
+  <label className=\\"theme-switch\\" htmlFor=\\"checkbox\\">
+    <input type=\\"checkbox\\" id=\\"checkbox\\" onChange={[Function: mockConstructor]} />
+    <div className=\\"slider round\\">
+      <img className=\\"light-icon\\" src=\\"sunny-icon.svg\\" alt=\\"light\\" />
+      <img className=\\"dark-icon\\" src=\\"night-icon.svg\\" alt=\\"dark\\" />
+    </div>
+  </label>
+</styled.div>"
+`;

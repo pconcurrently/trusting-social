@@ -7,7 +7,7 @@ describe('App', () => {
 
   it('should render ThemeSwitcher', () => {
     const container = shallow(<ThemeSwitcher onClick={onClick} />);
-    expect(container).toMatchSnapshot();
+    expect(container.debug()).toMatchSnapshot();
   });
 
   it('should fire onClick function', () => {

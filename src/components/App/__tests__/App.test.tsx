@@ -5,7 +5,7 @@ import { App } from '../App';
 describe('App', () => {
   it('should render App', () => {
     const app = shallow(<App />);
-    expect(app).toMatchSnapshot();
+    expect(app.debug()).toMatchSnapshot();
   });
 
   it('should hide StyledDarkThemeOverlay', () => {

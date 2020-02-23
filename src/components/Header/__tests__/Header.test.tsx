@@ -7,7 +7,7 @@ describe('App', () => {
 
   it('should render Header', () => {
     const container = shallow(<Header switchTheme={switchTheme} />);
-    expect(container).toMatchSnapshot();
+    expect(container.debug()).toMatchSnapshot();
   });
 
   it('should fire switchTheme function', () => {

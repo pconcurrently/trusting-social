@@ -1,3 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render Header 1`] = `ShallowWrapper {}`;
+exports[`App should render Header 1`] = `
+"<styled.header>
+  <div />
+  <ul>
+    <li>
+      <ThemeSwitcher onClick={[Function: mockConstructor]} />
+    </li>
+    <li>
+      <a href=\\"#\\">
+        Become a host
+      </a>
+    </li>
+    <li>
+      <a href=\\"#\\">
+        Help
+      </a>
+    </li>
+    <li>
+      <a href=\\"#\\">
+        Sign up
+      </a>
+    </li>
+    <li>
+      <a href=\\"#\\">
+        Login
+      </a>
+    </li>
+  </ul>
+</styled.header>"
+`;
