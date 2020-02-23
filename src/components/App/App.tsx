@@ -10,14 +10,38 @@ import { Header } from '../Header';
 import { Search } from '../Search';
 import { lightTheme, darkTheme } from '../../shared/themes';
 
+const LC_THEME = '__theme__';
+
 export const App = () => {
   const [theme, setTheme] = React.useState(lightTheme);
 
+  React.useEffect(() => {
+    try {
+      const theme = localStorage.getItem(LC_THEME);
+      if (theme) {
+        if (theme === "dark") {
+          setTheme(darkTheme);
+        } else {
+          setTheme(lightTheme);
+        }
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  },[]);
+
   const switchTheme = React.useCallback(() => {
+    let themeToBeSet;
     if (theme.NAME === 'dark') {
-      setTheme(lightTheme);
+      themeToBeSet = lightTheme;
     } else {
-      setTheme(darkTheme);
+      themeToBeSet = darkTheme;
+    }
+    setTheme(themeToBeSet);
+    try {
+      localStorage.setItem(LC_THEME, themeToBeSet.NAME);
+    } catch(err) {
+      console.log(err);
     }
   }, [setTheme, theme]);
 
@@ -31,7 +55,7 @@ export const App = () => {
             <StyledDarkThemeOverlay></StyledDarkThemeOverlay>
           )}
         </StyledAppBackground>
-        <Header switchTheme={switchTheme} />
+        <Header switchTheme={switchTheme} isDarkTheme={isDarkTheme} />
         <Search isDarkTheme={isDarkTheme} />
       </StyledApp>
     </ThemeProvider>

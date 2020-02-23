@@ -13,8 +13,7 @@ interface IProps {
 
 const DEBOUNCE_TIME = 300;
 
-export const Search = (props: IProps) => {
-  const { isDarkTheme } = props;
+export const Search: React.SFC<IProps> = ({ isDarkTheme }) => {
   const [filteredResults, setFilteredResults] = React.useState<string[]>([]);
 
   const handleOnChange = (value: string) => {

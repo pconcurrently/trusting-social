@@ -7,9 +7,10 @@ import airbnbLogo from '../../images/airbnb-logo.svg';
 
 interface IProps {
   switchTheme: () => void;
+  isDarkTheme: boolean;
 }
 
-export const Header: React.SFC<IProps> = ({ switchTheme }) => {
+export const Header: React.SFC<IProps> = ({ switchTheme, isDarkTheme }) => {
   return (
     <StyledHeader>
       <div className="logo-wrapper">
@@ -17,7 +18,7 @@ export const Header: React.SFC<IProps> = ({ switchTheme }) => {
       </div>
       <ul>
         <li>
-          <ThemeSwitcher onClick={switchTheme} />
+          <ThemeSwitcher onClick={switchTheme} isDarkTheme={isDarkTheme} />
         </li>
         <li>
           <a href="#">Become a host</a>
