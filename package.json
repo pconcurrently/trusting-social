@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "yarn run build && yarn run deploy-gs",
-    "deploy-gs": "gsutil rm gs://trusting-social.phohuynh.com/* && gsutil -m cp -r build/* gs://trusting-social.phohuynh.com"
+    "deploy-gs": "gsutil rm gs://trusting-social.phohuynh.com/** && gsutil -m cp -r build/* gs://trusting-social.phohuynh.com"
   },
   "eslintConfig": {
     "extends": "react-app"
